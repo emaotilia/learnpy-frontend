@@ -1,0 +1,82 @@
+
+import { Button } from "@mui/material"
+import { styled } from "@mui/material/styles"
+
+export const MainContainer = styled('div')({
+    display: "flex",
+    flexDirection: "column",
+    width: 'calc(50% - 7.5px)',
+})
+
+export const ButtonsContainer = styled('div')({
+    flex: "0 0 40px",
+    backgroundColor: "#15314B",
+    display: "flex",
+    justifyContent: "space-between"
+})
+
+export const TestsContainer = styled('div')(({ isBlured }) => ({
+    filter: isBlured ? "blur(4px)" : "none",
+    display: "flex",
+    flexDirection: "column",
+    flex: "1 1 auto",
+    backgroundColor: "#001528",
+    overflowY: "auto",
+    padding: "15px",
+    color: "#fff",
+    gap: "15px",
+    "&::-webkit-scrollbar": {
+        width: "6px"
+    },
+    "&::-webkit-scrollbar-thumb": {
+        backgroundColor: "#BBCCDD",
+        borderRadius: "8px"
+    }
+}))
+
+export const LeftButtonsContainer = styled('div')({
+    display: "flex"
+})
+
+export const RightButtonsContainer = styled('div')({
+    display: "flex",
+    gap: "15px"
+})
+
+export const LeftButton = styled(Button)({
+    textTransform: "none",
+    height: "100%",
+    color: "#fff",
+    padding: "0 15px",
+    fontSize: "14px",
+    fontWeight: 600,
+    borderRadius: 0,
+    "&:hover": {
+        backgroundColor: "#626ee3",
+    }
+})
+
+export const RightButton = styled(Button)({
+    textTransform: "none",
+    color: "#fff",
+    padding: "0 15px",
+    height: "100%",
+    border: 0,
+    fontWeight: 400,
+    fontSize: "14px",
+    borderRadius: 0,
+    "&:hover": {
+        backgroundColor: "#626ee3"
+    }
+})
+
+
+export const TestsButton = styled(LeftButton)({
+    backgroundColor: "#001528",
+})
+
+export const QuickTestButton = styled(LeftButton)({
+})
+
+export const ToggleButton = styled(RightButton)({
+})

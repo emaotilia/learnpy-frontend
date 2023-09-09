@@ -1,0 +1,12 @@
+.rpv-core__inner-pages {
+    padding: 20px 0;
+}
+
+.rpv-core__inner-pages::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.rpv-core__inner-pages::-webkit-scrollbar-thumb {
+    background-color: #001528;
+}
