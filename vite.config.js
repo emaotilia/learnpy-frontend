@@ -6,9 +6,9 @@ export default defineConfig({
     plugins: [react()],
     server: {
         proxy: {
-            '/api': "http://localhost:8000",
-            '/auth': "http://localhost:8000",
-            '/static': "http://localhost:8000"
+            '/api': "https://pylearn-backend-b4131cb12236.herokuapp.com",
+            '/auth': "https://pylearn-backend-b4131cb12236.herokuapp.com",
+            '/static': "https://pylearn-backend-b4131cb12236.herokuapp.com"
         }
     }
 })
